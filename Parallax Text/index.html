@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <title>Just For Fun | Vanilla Javascript</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="text">
+            <h2 style="--i:0.5"><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span></h2>
+            <h2 style="--i:1.5"><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span></h2>
+            <h2 style="--i:2.5"><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span></h2>
+            <h2 style="--i:2.25"><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span></h2>
+            <h2 style="--i:1.25"><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span></h2>
+            <h2 style="--i:0.75"><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span></h2>
+            <h2 style="--i:3"><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span></h2>
+            <h2 style="--i:0.35"><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span></h2>
+            <h2 style="--i:2.35"><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span><span>Just 4 Fun</span></h2>
+        </div>
+    </section>
+    <script>
+        const position = document.documentElement;
+        position.addEventListener("mousemove", e =>{
+            position.style.setProperty('--x', e.clientX + 'px')
+        })
+    </script>
+</body>
+</html>
