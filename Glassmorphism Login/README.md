@@ -4,6 +4,3 @@ A simple web page using HTML & CSS
 
 ![Screenshot 2022-11-12 231356](https://user-images.githubusercontent.com/85480387/201487521-7a93eb55-bfb3-4efe-8a44-eb595b5d478f.jpg)
 
-
-https://user-images.githubusercontent.com/85480387/201487538-de62d7b1-139d-4357-a67e-77312bf4bd1d.mp4
-
