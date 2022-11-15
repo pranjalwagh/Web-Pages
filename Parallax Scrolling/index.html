@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Parallax Scrolling Website | Vanilla Javascript</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="images/stars.png" id="stars">
+        <img src="images/moon.png" id="moon">
+        <img src="images/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Moon Light</h2>
+        <a href="sec" id="btn">Explore</a>
+        <img src="images/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Parallax Scrolling Effects</h2>
+        <p>Parallax scrolling is a special scrolling technique used in computer graphics, wherein background images move by the camera faster than foreground images. This creates an illusion of depth in a 2D scene and adds to the immersion. 
+            The parallax scrolling effect has been used in video games for a long time, but it has only recently become popular in web design. There are a few reasons for this. First, the widespread adoption of HTML5 and CSS3 has made it much easier to implement parallax scrolling on a website. Second, the rise of mobile devices has made it necessary for designers to find ways to make websites more engaging and interactive. And third, the popularity of responsive design has made it easier for designers to create websites that look good on all devices.
+            There are a few things you need to know before you can create a parallax scrolling website. First, you need to understand the difference between HTML and CSS. HTML is the code that is used to structure a web page, while CSS is the code that is used to style a web page. In order to create a parallax scrolling website, you will need to use both HTML and CSS.
+            Second, you need to understand how the parallax scrolling effect works. When you scroll down a web page, the background images move slower than the foreground images. This creates the illusion of depth and makes the website more immersive.
+            Third, you need to choose the right images for your website. The images you choose should be high-quality and relevant to your website's topic. fourth, you need to make sure your website's design is responsive. This means that your website should look good on all devices, from desktop computers to mobile phones.
+            Finally, you need to test your website on all devices. This will help you ensure that your website looks good on all devices and that the parallax scrolling effect works correctly.<br><br>Parallax scrolling is a special scrolling technique used in computer graphics, wherein background images move by the camera faster than foreground images. This creates an illusion of depth in a 2D scene and adds to the immersion. 
+            The parallax scrolling effect has been used in video games for a long time, but it has only recently become popular in web design. There are a few reasons for this. First, the widespread adoption of HTML5 and CSS3 has made it much easier to implement parallax scrolling on a website. Second, the rise of mobile devices has made it necessary for designers to find ways to make websites more engaging and interactive. And third, the popularity of responsive design has made it easier for designers to create websites that look good on all devices.
+            There are a few things you need to know before you can create a parallax scrolling website. First, you need to understand the difference between HTML and CSS. HTML is the code that is used to structure a web page, while CSS is the code that is used to style a web page. In order to create a parallax scrolling website, you will need to use both HTML and CSS.
+            Second, you need to understand how the parallax scrolling effect works. When you scroll down a web page, the background images move slower than the foreground images. This creates the illusion of depth and makes the website more immersive.
+            Third, you need to choose the right images for your website. The images you choose should be high-quality and relevant to your website's topic. fourth, you need to make sure your website's design is responsive. This means that your website should look good on all devices, from desktop computers to mobile phones.
+            Finally, you need to test your website on all devices. This will help you ensure that your website looks good on all devices and that the parallax scrolling effect works correctly. <br><br>Parallax scrolling is a special scrolling technique used in computer graphics, wherein background images move by the camera faster than foreground images. This creates an illusion of depth in a 2D scene and adds to the immersion. 
+            The parallax scrolling effect has been used in video games for a long time, but it has only recently become popular in web design. There are a few reasons for this. First, the widespread adoption of HTML5 and CSS3 has made it much easier to implement parallax scrolling on a website. Second, the rise of mobile devices has made it necessary for designers to find ways to make websites more engaging and interactive. And third, the popularity of responsive design has made it easier for designers to create websites that look good on all devices.
+            There are a few things you need to know before you can create a parallax scrolling website. First, you need to understand the difference between HTML and CSS. HTML is the code that is used to structure a web page, while CSS is the code that is used to style a web page. In order to create a parallax scrolling website, you will need to use both HTML and CSS.
+            Second, you need to understand how the parallax scrolling effect works. When you scroll down a web page, the background images move slower than the foreground images. This creates the illusion of depth and makes the website more immersive.
+            Third, you need to choose the right images for your website. The images you choose should be high-quality and relevant to your website's topic. fourth, you need to make sure your website's design is responsive. This means that your website should look good on all devices, from desktop computers to mobile phones.
+            Finally, you need to test your website on all devices. This will help you ensure that your website looks good on all devices and that the parallax scrolling effect works correctly.</p>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
